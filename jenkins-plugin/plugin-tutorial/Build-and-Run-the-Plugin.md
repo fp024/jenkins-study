@@ -4,11 +4,11 @@
 
 * 스텝 1:  [플러그인 개발 준비하기](Preparing-for-Plugin-Development.md)
 
-* 스탭 2: [플러그인 만들기](Create-a-Plugin.md)
+* 스텝 2: [플러그인 만들기](Create-a-Plugin.md)
 
-* **스탭 3: 플러그인 빌드 및 실행하기**
+* **스텝 3: 플러그인 빌드 및 실행하기**
 
-* 스탭 4: [플러그인 확장](Extend-the-Plugin.md)
+* 스텝 4: [플러그인 확장하기](Extend-the-Plugin.md)
 
 Maven HPI 플러그인은 Jenkins 플러그인을 빌드하고 패키징하는 데 사용됩니다. 또한 플러그인으로 Jenkins 인스턴스를 실행하는 편리한 방법을 제공합니다.
 
@@ -28,11 +28,11 @@ mvn hpi:run
 
 Jenkins에서 새로 FreeStyle 프로젝트를 만들고 이름을 지정합니다.
 
-그런 다음 "Say hello world" 빌드 스탭를 추가합니다. 다음과 같이 표시됩니다.
+그런 다음 "Say hello world" 빌드 스텝를 추가합니다. 다음과 같이 표시됩니다.
 
 ![demo-plugin-test-set-name](doc-resources/demo-plugin-test-set-name.png)
 
-이름을 입력하고 프로젝트를 저장하고 새 빌드를 시작합니다. UI에서 빌드로 이동하고 *Console Output*을 클릭하여 빌드 로그를 봅니다. 여기에는 방금 설정한 빌드 스탭에서 작성한 메시지가 포함됩니다.
+이름을 입력하고 프로젝트를 저장하고 새 빌드를 시작합니다. UI에서 빌드로 이동하고 *Console Output*을 클릭하여 빌드 로그를 봅니다. 여기에는 방금 설정한 빌드 스텝에서 작성한 메시지가 포함됩니다.
 
 ```bash
 Started by user unknown or anonymous
@@ -45,7 +45,7 @@ Finished: SUCCESS
 
 터미널에서 `Ctrl-C`(또는 여러분의 시스템의 동등한 키입력)를 눌러 Jenkins를 중지합시다.
 
-다음 스탭:  [플러그인 확장](Extend-the-Plugin.md)
+다음 스텝:  [플러그인 확장하기](Extend-the-Plugin.md)
 
 
 

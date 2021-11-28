@@ -4,11 +4,11 @@
 
 * 스텝 1:  [플러그인 개발 준비하기](Preparing-for-Plugin-Development.md)
 
-* **스탭 2: 플러그인 만들기**
+* **스텝 2: 플러그인 만들기**
 
-* 스탭 3: [플러그인 빌드 및 실행하기](Build-and-Run-the-Plugin.md)
+* 스텝 3: [플러그인 빌드 및 실행하기](Build-and-Run-the-Plugin.md)
 
-* 스탭 4: [플러그인 확장](Extend-the-Plugin.md)
+* 스텝 4: [플러그인 확장하기](Extend-the-Plugin.md)
 
 [개발 환경](Preparing-for-Plugin-Development.md)을 준비한 후 다음 단계는 새 플러그인을 만드는 것입니다.
 

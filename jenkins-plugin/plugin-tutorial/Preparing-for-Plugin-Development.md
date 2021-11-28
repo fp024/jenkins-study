@@ -3,9 +3,9 @@
 > 원문: https://www.jenkins.io/doc/developer/tutorial/prepare/
 
 * **스텝 1:  플러그인 개발 준비하기**
-* 스탭 2: [플러그인 만들기](Create-a-Plugin.md)
-* 스탭 3: [플러그인 빌드 및 실행하기](Build-and-Run-the-Plugin.md)
-* 스탭 4: [플러그인 확장](Extend-the-Plugin.md)
+* 스텝 2: [플러그인 만들기](Create-a-Plugin.md)
+* 스텝 3: [플러그인 빌드 및 실행하기](Build-and-Run-the-Plugin.md)
+* 스텝 4: [플러그인 확장하기](Extend-the-Plugin.md)
 
 ## JDK 다운로드 및 설치
 
@@ -153,5 +153,5 @@ $ mvn clean install
 
 - [x] IntelliJ 관련 설명에 그림이 있는 것 처럼 설명을 하는데 사진이 빠져있어 직접해보고 화면 캡처를 추가했다.
   * 예전 튜토리얼에는 settings.xml에 레파지토리 / 플러그인 레파지토리 / 미러 사이트 등을 추가해줬던 것 같은데... 현재 문서에는 그런 내용이 없다.
-  * Archetype Type을 별도로 로컬 레파지토리에 install 해서 사용하는 내용이 없다면 settings.xml을 설정해주는 내용이 들어가야할 것 같은데, 아래 가이드의 경우는 settings.xml을 설정해주는 가이드가 있다.
+  * 아키타입을 별도로 로컬 레파지토리에 install 해서 사용하는 내용이 없다면 settings.xml을 설정해주는 내용이 들어가야할 것 같은데, 아래 가이드의 경우는 settings.xml을 설정해주는 가이드가 있다.
     * https://www.velotio.com/engineering-blog/jenkins-plugin-development

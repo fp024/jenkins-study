@@ -6,7 +6,7 @@
 
 Jenkins에는 개발자가 Jenkins 동작의 거의 모든 측면에 영향을 미치는 플러그인을 작성할 수 있는 강력한 확장(Extension) 및 플러그인 시스템이 있습니다. "코어" 기능의 상당 부분도 확장 기능의 관점에서 작성되었습니다.
 
-더 분명한 확장 포인트로는 **SCM 구현** (Git, Subversion 또는 Perforce와 같은 SCM을 Jenkins에 통합), **빌드 스탭** (빌드 도구를 설정하는 편리한 UI에서 이메일 보내기에 이르기까지 모든 것을 제공) , **인증 영역** (Jenkins를 Single Sign-On 시스템, LDAP, Active Directory와 같은 외부 사용자 디렉터리와 통합) 을 포함합니다.
+더 분명한 확장 포인트로는 **SCM 구현** (Git, Subversion 또는 Perforce와 같은 SCM을 Jenkins에 통합), **빌드 스텝** (빌드 도구를 설정하는 편리한 UI에서 이메일 보내기에 이르기까지 모든 것을 제공) , **인증 영역** (Jenkins를 Single Sign-On 시스템, LDAP, Active Directory와 같은 외부 사용자 디렉터리와 통합) 을 포함합니다.
 
 하지만 그 이상이 있습니다. 
 
@@ -24,10 +24,10 @@ Jenkins에는 개발자가 Jenkins 동작의 거의 모든 측면에 영향을 �
 
 * 스텝 1:  [플러그인 개발 준비하기](Preparing-for-Plugin-Development.md)
 
-* 스탭 2: [플러그인 만들기](Create-a-Plugin.md)
+* 스텝 2: [플러그인 만들기](Create-a-Plugin.md)
 
-* 스탭 3: [플러그인 빌드 및 실행하기](Build-and-Run-the-Plugin.md)
+* 스텝 3: [플러그인 빌드 및 실행하기](Build-and-Run-the-Plugin.md)
 
-* 스탭 4: [플러그인 확장](Extend-the-Plugin.md)
+* 스텝 4: [플러그인 확장하기](Extend-the-Plugin.md)
 
   

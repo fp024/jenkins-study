@@ -1,14 +1,14 @@
-# 플러그인 확장
+# 플러그인 확장하기
 
 > 원문: https://www.jenkins.io/doc/developer/tutorial/extend/
 
 * 스텝 1:  [플러그인 개발 준비하기](Preparing-for-Plugin-Development.md)
 
-* 스탭 2: [플러그인 만들기](Create-a-Plugin.md)
+* 스텝 2: [플러그인 만들기](Create-a-Plugin.md)
 
-* 스탭 3: [플러그인 빌드 및 실행하기](Build-and-Run-the-Plugin.md)
+* 스텝 3: [플러그인 빌드 및 실행하기](Build-and-Run-the-Plugin.md)
 
-* **스탭 4: 플러그인 확장**
+* **스텝 4: 플러그인 확장하기**
 
 > 일반 텍스트 편집기로 따라할 수 있지만 이 섹션은 Maven을 지원하는 Java IDE를 사용하면 훨씬 쉽게 따라할 수 있습니다.
 
@@ -65,7 +65,7 @@ public class HelloWorldAction implements Action {
   (...)
 ```
 
-이제 빌드 스탭이 실행될 때 실제로 이 클래스의 인스턴스를 생성해야 합니다. 실행 중인 빌드에 생성한 액션의 인스턴스를 추가하려면 `HelloWorldBuilder` 클래스의 `perform` 메서드를 확장해야 합니다:
+이제 빌드 스텝이 실행될 때 실제로 이 클래스의 인스턴스를 생성해야 합니다. 실행 중인 빌드에 생성한 액션의 인스턴스를 추가하려면 `HelloWorldBuilder` 클래스의 `perform` 메서드를 확장해야 합니다:
 
 ```java
 (...)
@@ -88,7 +88,7 @@ public class HelloWorldAction implements Action {
 
 > Java 소스 코드를 변경하거나 리소스 파일을 추가 또는 제거할 때마다 변경 사항을 적용하려면 Jenkins 인스턴스를 다시 시작해야 합니다. Jenkins가 `hpi:run`을 통해 실행되는 동안에는 일부 리소스 파일만 편집할 수 있습니다.
 
-이제 이 빌드 스탭으로 빌드가 실행될 때 액션이 빌드 데이터에 추가됩니다. `work/jobs/JOBNAME/builds/BUILDNUMBER/` 디렉토리의 빌드에 해당하는 `build.xml` 파일을 보면 이를 확인할 수 있습니다.
+이제 이 빌드 스텝으로 빌드가 실행될 때 액션이 빌드 데이터에 추가됩니다. `work/jobs/JOBNAME/builds/BUILDNUMBER/` 디렉토리의 빌드에 해당하는 `build.xml` 파일을 보면 이를 확인할 수 있습니다.
 
 
 
@@ -163,7 +163,7 @@ public class HelloWorldAction implements Action {
 
 > 이것은 `src/main/java`가 아닌 `src/main/resources`에 있는 디렉토리입니다.
 
->`HelloWorldBuilder` 빌드 스탭과 관련된 리소스가 `src/main/resources/io/jenkins/plugins/sample/HelloWorldBuilder/` 디렉토리에 저장되어 있는 것을 볼 수 있습니다: `config.jelly`는 빌드 스탭 구성 폼이고 다양한 `config*.properties` 파일에는 빌드 스탭 구성에 대한 현지화가 포함되어 있으며 `help*.html` 파일은 구성에 대해 현지화된 인라인 도움말을 제공합니다.
+>`HelloWorldBuilder` 빌드 스텝과 관련된 리소스가 `src/main/resources/io/jenkins/plugins/sample/HelloWorldBuilder/` 디렉토리에 저장되어 있는 것을 볼 수 있습니다: `config.jelly`는 빌드 스텝 구성 폼이고 다양한 `config*.properties` 파일에는 빌드 스텝 구성에 대한 현지화가 포함되어 있으며 `help*.html` 파일은 구성에 대해 현지화된 인라인 도움말을 제공합니다.
 
 `src/main/resources/io/jenkins/plugins/sample/HelloWorldAction/`에 `index.jelly`라는 파일을 만듭니다. 이것은 `\http://JENKINS/job/JOBNAME/BUILDNUMBER/greeting/` URL에 표시됩니다. 다음 내용를 추가합니다.
 
